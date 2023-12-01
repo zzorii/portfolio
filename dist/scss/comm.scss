@@ -2,19 +2,70 @@
 @import "variables", "mixin", "fonts", "reset", "main", "contents";
 
 // 공통
-.container {
-  padding: 0 $bothMargin;
+// #header {
+//   padding: 0 $bothMargin;
+// }
+// #main {
+//   padding: 0 $bothMargin;
+// }
+// #footer {
+//   padding: 0 $bothMargin;
+// }
+body {
+  // cursor: none;
+  height: 100%;
 }
 .bg-gray {
   background: $gray-e;
 }
 .wrap {
   width: 100%;
+  height: 100%;
+}
+.container {
+  padding: 0 $bothMargin;
 }
 .section-tit {
   padding-top: 50px;
+
   font-size: 50px;
   text-align: center;
+}
+
+// 마우스
+.cursor {
+  display: none;
+}
+
+@media (any-pointer: fine) {
+  .cursor,
+  .cursor-sphere {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  .cursor-sphere__inner {
+    fill: transparent;
+    stroke: #212121;
+    stroke-width: 1.5px;
+    opacity: 0.7;
+    animation: rotationAnim 3s linear infinite;
+    transform-origin: center;
+  }
+
+  .cursor__path {
+    fill: rgb(174, 0, 255);
+  }
+
+  @keyframes rotationAnim {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 // header
@@ -62,10 +113,14 @@
 // intro
 #intro {
   .inner {
-    text-align: center;
     line-height: 100vh;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
+  }
+  .intro-txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   span {
     position: relative;
@@ -95,6 +150,7 @@
   }
 
   span:nth-child(6) {
+    margin-right: 30px;
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
   }
@@ -135,6 +191,7 @@
   }
 
   span:nth-child(14) {
+    margin-right: 30px;
     animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
   }
@@ -159,6 +216,7 @@
     -webkit-animation-delay: 1.8s;
   }
   span:nth-child(20) {
+    margin-right: 30px;
     animation-delay: 1.9s;
     -webkit-animation-delay: 1.9s;
   }
@@ -192,7 +250,6 @@
   .profile-img {
     text-align: center;
     width: 50%;
-    line-height: 70vh;
   }
   .profile-txt {
     width: 50%;

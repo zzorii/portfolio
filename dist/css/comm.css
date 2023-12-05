@@ -334,7 +334,7 @@ body {
     transform-origin: center;
   }
   .cursor__path {
-    fill: rgb(174, 0, 255);
+    fill: #212121;
   }
   @keyframes rotationAnim {
     to {
@@ -524,8 +524,13 @@ body {
 #profile .profile-txt .edu-date {
   padding: 0 20px;
 }
+#profile .profile-txt .cer-split {
+  display: flex;
+}
 #profile .profile-txt .cer-lst {
   display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 #profile .profile-txt .cer-lst li {
   padding: 5px 0;
@@ -543,6 +548,74 @@ body {
 #profile .skills-lst img {
   width: 48px;
   height: 48px;
+}
+
+.pin-spacer {
+  width: 100% !important;
+  overflow-x: hidden;
+}
+
+#project {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#project .section-tit {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 112px);
+}
+#project .sec-cont {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+#project .pro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#project .about-1 {
+  width: 50vw;
+}
+#project .about-1 .about-txt {
+  display: flex;
+  flex-direction: column;
+}
+#project .about-2 {
+  width: 50vw;
+}
+#project .about-2 .about-txt {
+  display: flex;
+  flex-direction: column;
+}
+#project .about-3 {
+  width: 50vw;
+}
+#project .about-3 .about-txt {
+  display: flex;
+  flex-direction: column;
+}
+#project .project-img {
+  width: 100%;
+}
+#project .project-img img {
+  width: 600px;
+}
+#project .project-2 {
+  margin: 0 60px;
+}
+#project .project-3 {
+  margin: 0 60px;
+}
+
+#contact .cont-contact {
+  border: 1px solid #212121;
+  opacity: 0.2;
 }
 
 #footer {

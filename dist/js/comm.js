@@ -44,17 +44,32 @@ window.addEventListener(
 );
 
 // project
+// let panels = gsap.utils.toArray("#project .sec-cont");
+
+// let panelTween = gsap.to(panels, {
+//   xPercent: -100 * (panels.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#project",
+//     start: "top top",
+//     end: "+=" + window.innerWidth * 3, // 가로로 스크롤할 거리 계산
+//     markers: true,
+//     pin: true,
+//     scrub: 1,
+//   },
+// });
 let panels = gsap.utils.toArray("#project .sec-cont");
 
 let panelTween = gsap.to(panels, {
-  xPercent: -105 * (panels.length - 1),
+  xPercent: -100 * (panels.length - 1),
   ease: "none",
   scrollTrigger: {
     trigger: "#project",
     start: "top top",
-    end: "+=" + window.innerWidth * 3, // 가로로 스크롤할 거리 계산
+    end: "+=300%", // 가로 스크롤 범위를 300%로 설정
     markers: true,
     pin: true,
     scrub: 1,
+    markers: false,
   },
 });

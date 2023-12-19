@@ -593,7 +593,7 @@ body {
   left: 59px;
   width: 81%;
   height: 43%;
-  background: url(/images/onepage.png) no-repeat;
+  background: url(../../images/onepage.png) no-repeat;
   background-size: cover;
   background-position: top;
   transition: all 4.5s;
@@ -655,7 +655,7 @@ body {
   left: 59px;
   width: 81%;
   height: 43%;
-  background: url(/images/museum.png) no-repeat;
+  background: url(../../images/museum.png) no-repeat;
   background-size: cover;
   background-position: top;
   transition: all 4.5s;
@@ -713,12 +713,12 @@ body {
 }
 #project .site-3 .pro-img3 .pro-box3 {
   position: absolute;
-  top: 3.7%;
+  top: 3.6%;
   left: 7.1%;
   width: 86%;
   height: 91.5%;
   border-radius: 24px;
-  background: url(/images/goodsList.jpg) no-repeat;
+  background: url(../../images/goodsList.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   transition: all 6s;
@@ -731,12 +731,12 @@ body {
 }
 #project .site-3 .pro-img3-2 .pro-box3 {
   position: absolute;
-  top: 3.7%;
+  top: 3.6%;
   left: 7.1%;
   width: 86%;
   height: 91.5%;
   border-radius: 24px;
-  background: url(/images/eventList.jpg) no-repeat;
+  background: url(../../images/eventList.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   transition: all 6s;
@@ -749,12 +749,12 @@ body {
 }
 #project .site-3 .pro-img3-3 .pro-box3 {
   position: absolute;
-  top: 3.7%;
+  top: 3.6%;
   left: 7.1%;
   width: 86%;
   height: 91.5%;
   border-radius: 24px;
-  background: url(/images/eventDetail.jpg) no-repeat;
+  background: url(../../images/eventDetail.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   transition: all 3s;

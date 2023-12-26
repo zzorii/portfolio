@@ -38,6 +38,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -49,12 +53,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/js/jquery.fullpage.css" />
     <link rel="stylesheet" href="./dist/css/comm.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/jquery.fullpage.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -115,7 +124,7 @@
           </div>
         </div>
       </header>
-      <main id="main">
+      <main id="main" class="fullpage">
         <section id="intro" class="bg-gray container section-g">
           <div class="inner">
             <h2 class="section-tit blind">INTRO</h2>
@@ -463,21 +472,44 @@
           <div class="inner">
             <h2 class="section-tit">CONTACT</h2>
             <div class="section-contents cont-contact">
-              <div class="email">
+              <div
+                class="email"
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+                data-aos-once="true"
+              >
                 <a href="mailto:nadahelly@naver.com">nadahelly@naver.com</a>
               </div>
               <div class="contact-box">
-                <div class="github">
+                <div
+                  class="github"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="300"
+                  data-aos-once="true"
+                >
                   <a href="https://github.com/zzorii" target="_blank">
                     <img src="./images/icons/github.svg" alt="github" />
                   </a>
                 </div>
-                <div class="blog-naver">
+                <div
+                  class="blog-naver"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
+                  data-aos-once="true"
+                >
                   <a href="https://blog.naver.com/nadahelly" target="_blank">
                     <img src="./images/blog-naver.png" alt="naverblog" />
                   </a>
                 </div>
-                <div class="blog-tistory">
+                <div
+                  class="blog-tistory"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-delay="800"
+                  data-aos-once="true"
+                >
                   <a href="https://zzorii.tistory.com/" target="_blank">
                     <img src="./images/blog-tistory.png" alt="tistoryblog" />
                   </a>

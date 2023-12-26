@@ -98,3 +98,8 @@ let panelTween = gsap.to(panels, {
     markers: false,
   },
 });
+
+// aos
+AOS.init();
+
+//test

@@ -24,12 +24,35 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // header
+// const headerEl = document.querySelector("#header");
+// window.addEventListener(
+//   "scroll",
+//   _.throttle(function () {
+//     console.log(window.scrollY);
+//     if (window.scrollY > 200) {
+//       gsap.to(headerEl, 0.6, {
+//         opacity: 0,
+//         display: "none",
+//       });
+//     } else {
+//       gsap.to(headerEl, 0.6, {
+//         opacity: 1,
+//         display: "block",
+//       });
+//     }
+//   }, 300)
+// );
+
+// header
 const headerEl = document.querySelector("#header");
+let lastScroll = 0;
+
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log(window.scrollY);
-    if (window.scrollY > 200) {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 200) {
       gsap.to(headerEl, 0.6, {
         opacity: 0,
         display: "none",
@@ -40,6 +63,8 @@ window.addEventListener(
         display: "block",
       });
     }
+
+    lastScroll = currentScroll;
   }, 300)
 );
 

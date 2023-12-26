@@ -114,6 +114,9 @@ body {
 // intro
 #intro {
   .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 100vh;
     font-size: 90px;
     font-weight: 700;
@@ -244,6 +247,14 @@ body {
 
 // profile
 #profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .cont-profile {
     display: flex;
     justify-content: space-between;
@@ -255,12 +266,12 @@ body {
   .profile-txt {
     width: 50%;
     h3 {
-      margin: 50px 0 30px;
-      font-size: 30px;
+      margin: 40px 0 25px;
+      font-size: 27px;
     }
     h4 {
-      margin: 15px 0 10px;
-      font-size: 23px;
+      margin: 10px 0;
+      font-size: 21px;
     }
     .edu-lst {
       li {
@@ -268,10 +279,11 @@ body {
       }
     }
     .edu-txt {
-      font-size: 18px;
+      font-size: 17px;
     }
     .edu-date {
       padding: 0 20px;
+      font-size: 15px;
     }
     .cer-split {
       display: flex;
@@ -286,16 +298,18 @@ body {
       }
     }
     .cer-txt {
-      font-size: 18px;
+      font-size: 17px;
     }
     .cer-date {
       padding: 0 20px;
+      font-size: 15px;
     }
   }
 
   .skills-lst {
     display: flex;
     justify-content: flex-start;
+    padding-bottom: 40px;
     li {
       padding-right: 15px;
     }
@@ -311,31 +325,42 @@ body {
   overflow-x: hidden;
 }
 #project {
+  padding: 0 !important;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .section-tit {
     position: absolute;
     top: 0;
     left: calc(50% - 112px);
+    z-index: 100;
   }
   .sec-cont {
     display: flex;
+    justify-content: center;
+    align-items: center;
     // align-items: flex-end;
     width: 100%;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .pro-inner {
-    // width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1440px;
+    padding: 0 4%;
   }
 
   .site-1 {
@@ -370,7 +395,7 @@ body {
   }
   .about-1 {
     width: 700px;
-    margin: 0 50px;
+    margin: 0 30px;
     .project-tit {
       font-size: 35px;
       font-weight: 700;
@@ -424,7 +449,7 @@ body {
   }
   .about-2 {
     width: 700px;
-    margin: 0 50px;
+    margin: 0 30px;
     .project-tit {
       font-size: 20px;
       display: flex;
@@ -523,7 +548,7 @@ body {
   }
   .about-3 {
     width: 700px;
-    margin: 0 50px;
+    margin-left: 50px;
     .project-tit {
       padding-top: 10px;
       img {
@@ -566,11 +591,17 @@ body {
 #contact {
   display: flex;
   justify-content: center;
+  height: 100vh;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .cont-contact {
     width: 600px;
     height: 400px;
-    margin-top: 50px;
-    border: 1px solid #212121;
+    margin: 50px;
+    // border: 1px solid #212121;
     .email {
       display: flex;
       justify-content: center;
@@ -579,6 +610,12 @@ body {
       a {
         font-size: 30px;
         font-weight: bold;
+        padding: 20px;
+        background-color: #333;
+        color: #aaa;
+        &:hover {
+          color: lightblue;
+        }
       }
     }
     .contact-box {
@@ -607,4 +644,14 @@ body {
       color: aliceblue;
     }
   }
+}
+
+.project-1 {
+  background: #f7c7c7;
+}
+.project-2 {
+  background: #c7d4f7;
+}
+.project-3 {
+  background: #f7c7c7;
 }

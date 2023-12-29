@@ -69,20 +69,6 @@ window.addEventListener(
 );
 
 // project
-// let panels = gsap.utils.toArray("#project .sec-cont");
-
-// let panelTween = gsap.to(panels, {
-//   xPercent: -100 * (panels.length - 1),
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: "#project",
-//     start: "top top",
-//     end: "+=" + window.innerWidth * 3, // 가로로 스크롤할 거리 계산
-//     markers: true,
-//     pin: true,
-//     scrub: 1,
-//   },
-// });
 let panels = gsap.utils.toArray("#project .sec-cont");
 
 let panelTween = gsap.to(panels, {
@@ -91,7 +77,7 @@ let panelTween = gsap.to(panels, {
   scrollTrigger: {
     trigger: "#project",
     start: "top top",
-    end: "+=300%", // 가로 스크롤 범위를 300%로 설정
+    end: "+=300%",
     markers: true,
     pin: true,
     scrub: 1,
@@ -103,3 +89,30 @@ let panelTween = gsap.to(panels, {
 AOS.init();
 
 //test
+// $(".fullpage").fullpage({
+//   sectionSelector: ".section-g",
+//   slideSelector: ".sec-cont",
+//   navigation: true,
+//   slidesNavigation: true,
+//   controlArrows: false,
+//   anchors: ["firstSection", "secondSection", "thirdSection", "fourthSection"],
+//   menu: "#menu",
+
+//   onLeave: function (index, nextIndex, direction) {
+//     if (index == 5) {
+//       $("#fp-nav").show();
+//     }
+//   },
+
+//   afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+//     if (anchorLink == "fourthSection" && slideIndex == 1) {
+//       $.fn.fullpage.setAllowScrolling(false, "up");
+//     }
+//   },
+
+//   onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+//     if (anchorLink == "fourthSection" && slideIndex == 1) {
+//       $.fn.fullpage.setAllowScrolling(true, "up");
+//     }
+//   },
+// });

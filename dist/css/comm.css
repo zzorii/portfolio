@@ -871,6 +871,10 @@ body {
 }
 #contact .cont-contact .contact-box img {
   width: 100px;
+  transition: transform 0.3s ease;
+}
+#contact .cont-contact .contact-box img:hover {
+  transform: scale(1.1);
 }
 
 #footer {
@@ -890,13 +894,13 @@ body {
 }
 
 .project-1 {
-  background: #f7c7c7;
+  background: #e2ffff;
 }
 
 .project-2 {
-  background: #c7d4f7;
+  background: #fff7df;
 }
 
 .project-3 {
-  background: #f7c7c7;
+  background: #feecec;
 }/*# sourceMappingURL=comm.css.map */

@@ -628,6 +628,10 @@ body {
       height: 50%;
       img {
         width: 100px;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -650,11 +654,12 @@ body {
 }
 
 .project-1 {
-  background: #f7c7c7;
+  background: #e2ffff;
 }
 .project-2 {
-  background: #c7d4f7;
+  background: #fff7df;
 }
 .project-3 {
-  background: #f7c7c7;
+  background: #feecec;
+  // background: #f7c7c7;
 }

@@ -386,6 +386,7 @@ body {
 }
 
 #intro {
+  background: #f2f2f2;
   /* ANIMATION */
 }
 #intro .inner {
@@ -894,13 +895,13 @@ body {
 }
 
 .project-1 {
-  background: #e2ffff;
+  background: #f2f2f2;
 }
 
 .project-2 {
-  background: #fff7df;
+  background: #eee;
 }
 
 .project-3 {
-  background: #feecec;
+  background: #f2f2f2;
 }/*# sourceMappingURL=comm.css.map */
